@@ -162,7 +162,7 @@ public class Player {
         TextureRegion region = currentFrames[currentFrame];
         if (facingLeft && !region.isFlipX()) region.flip(true, false);
         if (!facingLeft && region.isFlipX()) region.flip(true, false);
-        batch.draw(region, x - 64, y - 64, 160, 160);
+        batch.draw(region, x - 64, y - 48, 160, 160);
     }
 
     public void dispose() {
